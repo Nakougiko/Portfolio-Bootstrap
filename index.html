@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lukas Goulois</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Lukas - Portfolio</a>
+        </div>
+    </nav>
+
+    <main class="container my-3">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Card -->
+                <div class="card">
+                    <img src="./src/cv/photo.png" class="card-img-top img-fluid h-auto rounded" alt="Photo CV">
+                    <div class="card-body">
+                        <h5 class="card-title">Goulois Lukas</h5>
+                        <p class="card-text">
+                            <strong>Développeur</strong> passionné par l'informatiques, plus précisemment la programmation.
+                        </p>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#lettreModale">Voir ma lettre de motivation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col md-8">
+                <!-- Tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="experiences-tab" data-bs-toggle="tab"
+                            data-bs-target="#experiences" type="button" role="tab">Expériences</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education"
+                            type="button" role="tab">Éducation</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="competences-tab" data-bs-toggle="tab" data-bs-target="#competences"
+                            type="button" role="tab">Compétences</button>
+                    </li>
+                </ul>
+
+                <!-- Contenu des tabs -->
+                <div class="tab-content mt-3">
+                    <!-- Expériences -->
+                    <div class="tab-pane fade show active" id="experiences" role="tabpanel">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex flex-column justify-content-between align-items-start">
+                                <div class="d-flex justify-content-between w-100">
+                                    <strong>Développement logiciel</strong>
+                                    <span class="badge bg-primary">Stage</span>
+                                </div>
+                                
+                                <em>Lycée Elisa Lemonnier</em> <span class="text-muted"> (2022 - 2 mois)</span>
+                        
+                                <p class="mt-2 mb-0">Création d'un projet et mise en place de celui-ci.</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <!-- Formation -->
+                    <div class="tab-pane fade" id="education" role="tabpanel">
+                        <ul class="list-group">
+                            <!-- Licence Professionnelle -->
+                            <li class="list-group-item d-flex flex-column justify-content-between align-items-start">
+                                <div class="d-flex justify-content-between w-100">
+                                    <strong>Licence Professionnelle Développement d'Applications Web et mobile</strong>
+                                    <span class="badge bg-success">En cours</span>
+                                </div>
+                                <em>UPHF INSA</em> <span class="text-muted"> (2024 - 2025)</span>
+                            </li>
+                    
+                            <!-- BTS Systèmes Numériques -->
+                            <li class="list-group-item d-flex flex-column justify-content-between align-items-start">
+                                <div class="d-flex justify-content-between w-100">
+                                    <strong>BTS Systèmes Numériques option Informatique et Réseau</strong>
+                                    <span class="badge bg-secondary">Diplôme obtenu</span>
+                                </div>
+                                <em>Lycée Elisa Lemonnier</em> <span class="text-muted"> (2022 - 2024)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                
+                    <!-- Compétences -->
+                    <div class="tab-pane fade" id="competences" role="tabpanel">
+                        <p>
+                            Liste non exhaustive de mes compétences :
+                        </p>
+                        <div class="d-flex flex-wrap">
+                            <span class="badge bg-warning m-1" data-bs-toggle="tooltip" title="Maîtrise avancée">HTML</span>
+                            <span class="badge bg-warning m-1" data-bs-toggle="tooltip" title="Maîtrise avancée">CSS</span>
+                            <span class="badge bg-warning m-1" data-bs-toggle="tooltip" title="Maîtrise avancée">Javascript</span>
+                            <span class="badge bg-info m-1" data-bs-toggle="tooltip" title="Développement d'applications">Flutter</span>
+                            <span class="badge bg-info m-1" data-bs-toggle="tooltip" title="Framework Backend">CakePHP</span>
+                            <span class="badge bg-success m-1" data-bs-toggle="tooltip" title="Base de données relationnelles">MySQL</span>
+                            <span class="badge bg-success m-1" data-bs-toggle="tooltip" title="Bonne Maîtrise">Python</span>
+                            <span class="badge bg-primary m-1" data-bs-toggle="tooltip" title="Bonne Maîtrise">Java</span>
+                            <span class="badge bg-primary m-1" data-bs-toggle="tooltip" title="Bonne Maîtrise">C++</span>
+                            <span class="badge bg-secondary m-1" data-bs-toggle="tooltip" title="Bonne Maîtrise">C#</span>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+
+    <!-- Carousel desactivé parce que j'aime pas -->
+    <div id="projetsCarousel" class="carousel slide" data-bs-ride="carousel" style="display: none;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://private-user-images.githubusercontent.com/47836432/404391530-477ea56e-0282-47ae-85b5-e5d2c99b370d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgwNzEwNjMsIm5iZiI6MTczODA3MDc2MywicGF0aCI6Ii80NzgzNjQzMi80MDQzOTE1MzAtNDc3ZWE1NmUtMDI4Mi00N2FlLTg1YjUtZTVkMmM5OWIzNzBkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTI4VDEzMjYwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRlYjIzMTJmZGQ5ZjE2MTM1Y2RlZDkwZGQ1OTJhNDJlYjA2MjM3NGRhNzA4ZmNiMmYyNDU1MzFjZTVmNTA4MTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.53q7-YurZ-Diplm2uAQKHC3lDzPv890MaLKMzUsvArI"
+                    class="d-block w-100" alt="Projet 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://private-user-images.githubusercontent.com/47836432/400686289-c750715d-752d-455a-9636-c3cebfedea1f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgwNzExMzcsIm5iZiI6MTczODA3MDgzNywicGF0aCI6Ii80NzgzNjQzMi80MDA2ODYyODktYzc1MDcxNWQtNzUyZC00NTVhLTk2MzYtYzNjZWJmZWRlYTFmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTI4VDEzMjcxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTMxM2VjOTc3MjZkNDgwYjk4OTU2M2ZmY2QwNjcwODAzNDk5NTk1NTk3NjU0N2E1MzBiN2VmMjAzYTlmNTg2ZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.rHlqAxROuO6s90G8awBkswezQ4FcvJbYcvyiYVhX_MI"
+                    class="d-block w-100" alt="Projet 2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projetsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projetsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- Modal Lettre de Motivation -->
+    <div class="modal fade" id="lettreModale" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Lettre de motivation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Madame, Monsieur,</p>
+                    <p>Je vous adresse ma candidature pour un poste de développeur web. Fort d'une formation en
+                        développement web et d'une expérience de plusieurs années dans ce domaine, je suis convaincu que
+                        mes compétences techniques et ma passion pour l'innovation peuvent apporter une réelle valeur
+                        ajoutée à votre entreprise.</p>
+                    <p>Je suis disponible pour discuter de cette opportunité plus en détail lors d'un entretien. Je vous
+                        prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.</p>
+                    <p><strong>Lukas Goulois</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        tooltipTriggerList.map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+</body>
+
+</html>
